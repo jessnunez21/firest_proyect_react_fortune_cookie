@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font-family: 'Pangolin', cursive;
+  --font-title: 'Roboto', sans-serif;
+  --font-Rampart: 'Rampart One', cursive;
+  --font-Shantell: 'Shantell Sans', cursive;
+}
+img{
+  display: block;
+  width: 100%;
+ 
+}
+
+.app{
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 3fr  1fr ;
+  transition: background-image 0.5s ;
+}
+
+.cart__body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+.cart__border{
+  display: block;
+  width: 100%;
+ 
+ 
+}
+
+.cart__border img{
+  display: block;
+  width: 100%;
+  grid-row: 2/3;
+ 
+}
+
+.app__title{
+  font-size:3.5rem;
+  font-family: var(--font-Rampart);
+  font-weight: 400;
+  grid-row: 1/2;
+
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.552);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+
+.cart__phrase p:nth-child(1) {
+  position: relative;
+  top: -7em;
+  font-family: var(--font-Shantell);
+  font-size: 1.5rem;
+  max-width: 37rem;
+  display: block;
+  
+
+  
+}
+.cart__false{
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: var(--font-Shantell);
+  font-weight: 400;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.cart__btn{
+
+  border: 2px solid currentColor;
+  
+  grid-row: 3/4;
+  padding: 1em 2em;
+  border-radius: 1em;
+  font-size: 1rem;
+  background-color: #ffa645;
+  color: #893446;
+  font-weight: 600;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: transform 100ms ease, filter 100ms ease;
+ 
+}
+.cart__btn:hover{
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.cart__author{
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: rgba(211, 174, 150, 0.655);
+    bottom: 20em;
+    font-style: oblique; 
+
+}
+
+
+
+
+
+@media (max-width:500px) {
+ 
+    .app__title{
+      font-size: 2rem;
+    
+    }
+    .cart__border{
+      position: relative;
+    }
+    .cart__phrase p:nth-child(1){
+      position: relative;
+      top: -7em;
+      font-family: var(--font-Shantell);
+      font-size: 1.1rem;
+      max-width: 20em;
+      display: block;
+    }
+
+    .cart__author{
+      position: absolute;
+      right: 1em;
+      bottom: 19em;
+    
+      
+      
+      font-style: oblique;
+       background-color:transparent;
+     
+    }
+  
+}
+
+@media (max-width:1024px){
+  .app__title{
+    font-size: 3rem;
+  }
+}
+
